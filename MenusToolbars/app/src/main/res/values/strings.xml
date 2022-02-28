@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MenusToolbars</string>
+    <string name="inicio">Inicio</string>
+    <string name="contactos">Contactos</string>
+    <string name="ajustes">Ajustes</string>
+    <string name="abrir">Abrir</string>
+    <string name="cerrar">Cerrar</string>
+</resources>

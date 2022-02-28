@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Estefania/AndroidStudioProjects/MenusToolbars/app/src/main/res/layout/activity_ej01_options_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Estefania/AndroidStudioProjects/MenusToolbars/app/src/main/res/layout/activity_ej02_options_menu_toasts.xml" value="0.1" />
+        <entry key="..\:/Users/Estefania/AndroidStudioProjects/MenusToolbars/app/src/main/res/layout/activity_ej03_atras.xml" value="0.22644927536231885" />
+        <entry key="..\:/Users/Estefania/AndroidStudioProjects/MenusToolbars/app/src/main/res/layout/activity_ej042_context_menu.xml" value="0.23867753623188406" />
+        <entry key="..\:/Users/Estefania/AndroidStudioProjects/MenusToolbars/app/src/main/res/layout/activity_ej04_context_menu.xml" value="0.32116788321167883" />
+        <entry key="..\:/Users/Estefania/AndroidStudioProjects/MenusToolbars/app/src/main/res/layout/activity_ej05_tool_bar.xml" value="0.22644927536231885" />
+        <entry key="..\:/Users/Estefania/AndroidStudioProjects/MenusToolbars/app/src/main/res/layout/activity_ej06_atras_menu_tool_bar.xml" value="0.22644927536231885" />
+        <entry key="..\:/Users/Estefania/AndroidStudioProjects/MenusToolbars/app/src/main/res/layout/activity_ej07_navigation_drawer.xml" value="0.22644927536231885" />
+        <entry key="..\:/Users/Estefania/AndroidStudioProjects/MenusToolbars/app/src/main/res/layout/activity_main.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/Estefania/AndroidStudioProjects/MenusToolbars/app/src/main/res/layout/cabecera07.xml" value="0.2" />
+        <entry key="..\:/Users/Estefania/AndroidStudioProjects/MenusToolbars/app/src/main/res/layout/conten_activity07.xml" value="0.22644927536231885" />
+        <entry key="..\:/Users/Estefania/AndroidStudioProjects/MenusToolbars/app/src/main/res/menu/menu1.xml" value="0.1" />
+        <entry key="..\:/Users/Estefania/AndroidStudioProjects/MenusToolbars/app/src/main/res/menu/menu_add_del.xml" value="0.24270833333333333" />
+        <entry key="..\:/Users/Estefania/AndroidStudioProjects/MenusToolbars/app/src/main/res/menu/menucontextual1.xml" value="0.264" />
+        <entry key="..\:/Users/Estefania/AndroidStudioProjects/MenusToolbars/app/src/main/res/menu/menucontextual2.xml" value="0.2" />
+        <entry key="..\:/Users/Estefania/AndroidStudioProjects/MenusToolbars/app/src/main/res/menu/menucontextualmostrar.xml" value="0.24270833333333333" />
+        <entry key="..\:/Users/Estefania/AndroidStudioProjects/MenusToolbars/app/src/main/res/menu/menucontextualunico.xml" value="0.24270833333333333" />
+        <entry key="..\:/Users/Estefania/AndroidStudioProjects/MenusToolbars/app/src/main/res/menu/nav_menu.xml" value="0.24270833333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

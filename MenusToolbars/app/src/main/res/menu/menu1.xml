@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--No funciona el icono en Item 1, ni Item 2, ni Item 3-->
+
+    <item
+        android:id="@+id/iteminfo"
+        android:title="ITEM INFO"
+        app:showAsAction="always"
+        android:icon="@android:drawable/ic_dialog_info"/>
+
+    <item
+        android:id="@+id/item1"
+        android:title="ITEM 1"
+        app:showAsAction="ifRoom"
+        android:icon="@android:drawable/ic_dialog_info"/>
+
+    <item
+        android:id="@+id/item2"
+        android:title="ITEM 2"
+        app:showAsAction="never"
+        android:icon="@android:drawable/ic_dialog_info"/>
+
+    <item
+        android:id="@+id/item3"
+        android:title="ITEM 3"
+        app:showAsAction="never|withText"
+        android:icon="@android:drawable/ic_dialog_info">
+
+        <menu>
+            <item
+                android:id="@+id/item31"
+                android:title="ITEM 3_1"
+                android:icon="@android:drawable/ic_dialog_email"/>
+            <item
+                android:id="@+id/item32"
+                android:title="ITEM 3_2"
+                android:icon="@android:drawable/ic_media_next"/>
+            <item
+                android:id="@+id/item33"
+                android:title="ITEM 3_3"/>
+        </menu>
+
+    </item>
+
+</menu>
