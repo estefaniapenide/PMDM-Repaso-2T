@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dest1"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Cámara" />
+        <item
+            android:id="@+id/nav_dest2"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Fotos" />
+        <item
+            android:id="@+id/nav_dest3"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Vídeos" />
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/itemtitulo"
+            android:title="Acciones">
+            <menu>
+                <item
+                    android:id="@+id/itemajustes"
+                    android:icon="@android:drawable/ic_menu_manage"
+                    android:title="Ajustes"/>
+                <item
+                    android:id="@+id/itemayuda"
+                    android:icon="@android:drawable/ic_menu_help"
+                    android:title="Ayuda"/>
+            </menu>
+        </item>
+    </group>
+
+</menu>

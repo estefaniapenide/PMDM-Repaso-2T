@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_principal">
+
+    <fragment
+        android:id="@+id/nav_principal"
+        android:name="com.example.navigationdrawer.PrincipalFragment"
+        android:label="NAVIGATION DRAWER"
+        tools:layout="@layout/fragment_principal" >
+        <action
+            android:id="@+id/action_principalFragment_to_nav_dest1"
+            app:destination="@id/nav_dest1" />
+        <action
+            android:id="@+id/action_principalFragment_to_nav_dest2"
+            app:destination="@id/nav_dest2" />
+        <action
+            android:id="@+id/action_principalFragment_to_nav_dest3"
+            app:destination="@id/nav_dest3" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_dest1"
+        android:name="com.example.navigationdrawer.Destino1Fragment"
+        android:label="CÁMARA"
+        tools:layout="@layout/fragment_destino2" >
+        <action
+            android:id="@+id/action_nav_dest1_to_nav_principal"
+            app:destination="@id/nav_principal" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_dest2"
+        android:name="com.example.navigationdrawer.Destino2Fragment"
+        android:label="FOTOS"
+        tools:layout="@layout/fragment_destino1" >
+        <action
+            android:id="@+id/action_nav_dest2_to_destino21Fragment"
+            app:destination="@id/destino21Fragment" />
+        <action
+            android:id="@+id/action_nav_dest2_to_destino22Fragment"
+            app:destination="@id/destino22Fragment" />
+        <action
+            android:id="@+id/action_nav_dest2_to_destino23Fragment"
+            app:destination="@id/destino23Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_dest3"
+        android:name="com.example.navigationdrawer.Destino3Fragment"
+        android:label="VIDEOS"
+        tools:layout="@layout/fragment_destino3" >
+        <action
+            android:id="@+id/action_nav_dest3_to_nav_principal"
+            app:destination="@id/nav_principal" />
+    </fragment>
+    <fragment
+        android:id="@+id/destino21Fragment"
+        android:name="com.example.navigationdrawer.Destino21Fragment"
+        android:label="FOTO 1"
+        tools:layout="@layout/fragment_destino21" >
+        <action
+            android:id="@+id/action_destino21Fragment_to_destino22Fragment"
+            app:destination="@id/destino22Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/destino22Fragment"
+        android:name="com.example.navigationdrawer.Destino22Fragment"
+        android:label="FOTO 2"
+        tools:layout="@layout/fragment_destino22" >
+        <action
+            android:id="@+id/action_destino22Fragment_to_destino23Fragment"
+            app:destination="@id/destino23Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/destino23Fragment"
+        android:name="com.example.navigationdrawer.Destino23Fragment"
+        android:label="FOTO 3"
+        tools:layout="@layout/fragment_destino23" >
+        <action
+            android:id="@+id/action_destino23Fragment_to_nav_principal"
+            app:destination="@id/nav_principal" />
+    </fragment>
+
+
+</navigation>
