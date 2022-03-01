@@ -1,10 +1,7 @@
 package com.example.navigationdrawer
 
 import android.os.Bundle
-import android.view.ContextMenu
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
@@ -32,6 +29,20 @@ class Destino2Fragment : Fragment() {
         registerForContextMenu(binding.tvFotos)
 
         binding.button4.setOnClickListener { findNavController().navigate(Destino2FragmentDirections.actionNavDest2ToDestino21Fragment()) }
+    }
+
+    override fun onCreateContextMenu(menu: ContextMenu, v: View, menuInfo: ContextMenu.ContextMenuInfo?) {
+        super.onCreateContextMenu(menu, v, menuInfo)
+        requireActivity().menuInflater.inflate(R.menu.menufotos, menu)
+    }
+
+    override fun onContextItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            R.id.itemfoto1->{findNavController().navigate(Destino2FragmentDirections.actionNavDest2ToDestino21Fragment())}
+            R.id.itemfoto2->{findNavController().navigate(Destino2FragmentDirections.actionNavDest2ToDestino22Fragment())}
+            R.id.itemfoto3->{findNavController().navigate(Destino2FragmentDirections.actionNavDest2ToDestino23Fragment())}
+        }
+        return super.onContextItemSelected(item)
     }
 
     override fun onDestroyView() {

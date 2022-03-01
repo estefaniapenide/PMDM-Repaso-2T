@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
 
-    override fun onCreateContextMenu(menu: ContextMenu, v: View, menuInfo: ContextMenu.ContextMenuInfo?) {
+   /* override fun onCreateContextMenu(menu: ContextMenu, v: View, menuInfo: ContextMenu.ContextMenuInfo?) {
         super.onCreateContextMenu(menu, v, menuInfo)
         if(v.id==R.id.tvFotos){
             menuInflater.inflate(R.menu.menufotos, menu)
@@ -60,5 +60,5 @@ class MainActivity : AppCompatActivity() {
             R.id.itemfoto3->{navController.navigate(Destino2FragmentDirections.actionNavDest2ToDestino23Fragment())}
         }
         return super.onContextItemSelected(item)
-    }
+    }*/
 }
