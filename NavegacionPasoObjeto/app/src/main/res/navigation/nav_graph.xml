@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/origenFragment">
+
+    <fragment
+        android:id="@+id/origenFragment"
+        android:name="com.example.navegacionpasoobjeto.OrigenFragment"
+        android:label="fragment_origen"
+        tools:layout="@layout/fragment_origen" >
+        <action
+            android:id="@+id/action_origenFragment_to_destinoFragment"
+            app:destination="@id/destinoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/destinoFragment"
+        android:name="com.example.navegacionpasoobjeto.DestinoFragment"
+        android:label="fragment_destino"
+        tools:layout="@layout/fragment_destino" >
+        <argument
+            android:name="datos"
+            app:argType="com.example.navegacionpasoobjeto.Persona"/>
+    </fragment>
+
+</navigation>

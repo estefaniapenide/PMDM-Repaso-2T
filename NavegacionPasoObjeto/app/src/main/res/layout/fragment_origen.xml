@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A6A4A4"
+    android:gravity="center"
+    tools:context=".OrigenFragment"
+    android:padding="32dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#BAED8E"
+        android:layout_gravity="center">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#BAED8E"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:text="Introduzca los datos:"
+                    android:layout_margin="10dp"/>
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName"
+                    android:layout_width="230dp"
+                    android:layout_height="match_parent"
+                    android:ems="5"
+                    android:inputType="textPersonName"
+                    android:hint="Nombre"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:background="#BCBABA"
+                    android:layout_margin="10dp"
+                    android:padding="5dp"/>
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName2"
+                    android:layout_width="230dp"
+                    android:layout_height="match_parent"
+                    android:ems="5"
+                    android:inputType="textPersonName"
+                    android:hint="Apellidos"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:background="#BCBABA"
+                    android:layout_margin="10dp"
+                    android:padding="5dp"/>
+
+                <EditText
+                    android:id="@+id/editTextNumber"
+                    android:layout_width="230dp"
+                    android:layout_height="match_parent"
+                    android:ems="5"
+                    android:inputType="number"
+                    android:hint="Edad"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:background="#BCBABA"
+                    android:layout_margin="10dp"
+                    android:padding="5dp"/>
+
+                <EditText
+                    android:id="@+id/editTextTextEmailAddress"
+                    android:layout_width="230dp"
+                    android:layout_height="match_parent"
+                    android:ems="5"
+                    android:inputType="textEmailAddress"
+                    android:hint="Email"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:background="#BCBABA"
+                    android:layout_margin="10dp"
+                    android:padding="5dp"/>
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Enviar"
+                    android:backgroundTint="@color/white"
+                    android:textColor="#8BC34A"
+                    android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
