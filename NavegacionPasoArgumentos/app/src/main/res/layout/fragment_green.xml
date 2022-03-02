@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009688"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".GreenFragment">
+
+
+    <Button
+        android:id="@+id/buttongreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IR AL AMARILLO (DEFAULT INFO)" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="10dp"
+        android:ems="4"
+        android:hint="12"
+        android:background="@color/white"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/buttonpasainfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PASAR INFORMACIÓN AL AMARILLO" />
+
+
+</LinearLayout>
