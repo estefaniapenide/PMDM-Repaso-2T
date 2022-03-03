@@ -1,7 +1,9 @@
 package com.example.navigationdrawermanual
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
 import androidx.navigation.NavController
@@ -23,23 +25,24 @@ class MainActivity : AppCompatActivity() {
 
         val toggle= ActionBarDrawerToggle(this,binding.drawer,binding.content.toolbar,R.string.abrir,R.string.cerrar)
 
+
         binding.drawer.addDrawerListener(toggle)
         toggle.syncState()
 
-        //navHostFragment=supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
-        //navController= navHostFragment.navController
+        navHostFragment=supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
+        navController= navHostFragment.navController
 
         //Si se llama igual a los items y los fragments se puede usar esto, pero no permite usar convinado con e setNavigationItemSelectedListener
-        //binding.navView.setupWithNavController(navController)
+        binding.navView.setupWithNavController(navController)
 
-        binding.navView.setNavigationItemSelectedListener {
+        /*binding.navView.setNavigationItemSelectedListener {
             when(it.itemId){
                 R.id.nav_ajustes->{accion()}
                 R.id.nav_contactos->{accion()}
                 R.id.nav_inicio->{accion()}
             }
             true
-        }
+        }*/
     }
 
     private fun accion(){
