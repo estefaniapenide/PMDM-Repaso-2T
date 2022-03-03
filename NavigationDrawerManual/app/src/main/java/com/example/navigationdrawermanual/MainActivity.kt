@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavController
+import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.example.navigationdrawermanual.databinding.ActivityMainBinding
@@ -33,37 +34,37 @@ class MainActivity : AppCompatActivity() {
         navController= navHostFragment.navController
 
         //Si se llama igual a los items y los fragments se puede usar esto, pero no permite usar convinado con e setNavigationItemSelectedListener
-        binding.navView.setupWithNavController(navController)
+        //binding.navView.setupWithNavController(navController)
 
-        /*binding.navView.setNavigationItemSelectedListener {
+        binding.navView.setNavigationItemSelectedListener {
             when(it.itemId){
-                    R.id.nav_ajustes -> {
+                    R.id.item_ajustes -> {
                         when(navController.currentDestination?.id){
-                            R.id.nav_ajustes->findNavController(R.id.fragmentContainerView).navigate(AjustesFragmentDirections.actionNavAjustesSelf())
-                            R.id.nav_contactos->findNavController(R.id.fragmentContainerView).navigate(AjustesFragmentDirections.actionNavAjustesToNavContactos())
-                            R.id.nav_inicio->findNavController(R.id.fragmentContainerView).navigate(AjustesFragmentDirections.actionNavAjustesToNavInicio())
+                            R.id.nav_ajustes->navController.navigate(AjustesFragmentDirections.actionNavAjustesSelf())
+                            R.id.nav_contactos->navController.navigate(ContactosFragmentDirections.actionNavContactosToNavAjustes())
+                            R.id.nav_inicio->navController.navigate(InicioFragmentDirections.actionNavInicioToNavAjustes())
                         }
-                        accion()
+                        accion("AJUSTES")
                     }
-                    R.id.nav_contactos -> {
+                    R.id.item_contactos -> {
                         when(navController.currentDestination?.id){
-                            R.id.nav_contactos->findNavController(R.id.fragmentContainerView).navigate(ContactosFragmentDirections.actionNavContactosSelf())
-                            R.id.nav_ajustes->findNavController(R.id.fragmentContainerView).navigate(ContactosFragmentDirections.actionNavContactosToNavAjustes())
-                            R.id.nav_inicio->findNavController(R.id.fragmentContainerView).navigate(ContactosFragmentDirections.actionNavContactosToNavInicio())
+                            R.id.nav_contactos->navController.navigate(ContactosFragmentDirections.actionNavContactosSelf())
+                            R.id.nav_ajustes->navController.navigate(AjustesFragmentDirections.actionNavAjustesToNavContactos())
+                            R.id.nav_inicio->navController.navigate(InicioFragmentDirections.actionNavInicioToNavContactos())
                         }
-                        accion()
+                        accion("CONTACTOS")
                     }
-                    R.id.nav_inicio -> {
+                    R.id.item_inicio -> {
                         when(navController.currentDestination?.id){
-                            R.id.nav_inicio->findNavController(R.id.fragmentContainerView).navigate(InicioFragmentDirections.actionNavInicioSelf())
-                            R.id.nav_ajustes->findNavController(R.id.fragmentContainerView).navigate(InicioFragmentDirections.actionNavInicioToNavAjustes())
-                            R.id.nav_contactos->findNavController(R.id.fragmentContainerView).navigate(InicioFragmentDirections.actionNavInicioToNavContactos())
+                            R.id.nav_inicio->navController.navigate(InicioFragmentDirections.actionNavInicioSelf())
+                            R.id.nav_ajustes->navController.navigate(AjustesFragmentDirections.actionNavAjustesToNavInicio())
+                            R.id.nav_contactos->navController.navigate(ContactosFragmentDirections.actionNavContactosToNavInicio())
                         }
-                        accion()
+                        accion("INICIO")
                     }
             }
             true
-        }*/
+        }
 
         //Tampoco funciona con setupWithNavController(), o se usa uno o el otro
        /* val shareItem: MenuItem = binding.navView.getMenu().findItem(R.id.nav_ajustes)
@@ -74,11 +75,12 @@ class MainActivity : AppCompatActivity() {
         }*/
     }
 
-    private fun accion(){
+    private fun accion(s:String){
         //navHostFragment=supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
         //navController= navHostFragment.navController
         //binding.navView.setupWithNavController(navController)
         binding.drawer.closeDrawer(GravityCompat.START)
+        Snackbar.make(binding.root,s,Snackbar.LENGTH_SHORT).show()
     }
 
    /* private fun accion(int:Int){
