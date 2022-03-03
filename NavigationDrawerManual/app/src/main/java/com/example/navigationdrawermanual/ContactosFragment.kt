@@ -19,7 +19,7 @@ class ContactosFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        Toast.makeText(activity,"CONTACTOS", Toast.LENGTH_SHORT).show()
+
     }
 
     override fun onDestroy() {

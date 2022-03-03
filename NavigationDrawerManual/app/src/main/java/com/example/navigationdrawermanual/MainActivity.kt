@@ -1,13 +1,18 @@
 package com.example.navigationdrawermanual
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MenuItem
+import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.example.navigationdrawermanual.databinding.ActivityMainBinding
+import com.google.android.material.snackbar.Snackbar
+
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -23,7 +28,6 @@ class MainActivity : AppCompatActivity() {
         val toggle= ActionBarDrawerToggle(this,binding.drawer,binding.content.toolbar,R.string.abrir,R.string.cerrar)
         binding.drawer.addDrawerListener(toggle)
         toggle.syncState()
-
 
         navHostFragment=supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
         navController= navHostFragment.navController
@@ -58,6 +62,14 @@ class MainActivity : AppCompatActivity() {
                         accion()
                     }
             }
+            true
+        }*/
+
+        //Tampoco funciona con setupWithNavController(), o se usa uno o el otro
+       /* val shareItem: MenuItem = binding.navView.getMenu().findItem(R.id.nav_ajustes)
+        shareItem.setOnMenuItemClickListener {
+            Snackbar.make(binding.root, "Ajustes", Snackbar.LENGTH_SHORT).show()
+            binding.drawer.closeDrawer(GravityCompat.START)
             true
         }*/
     }

@@ -19,7 +19,7 @@ class InicioFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        Toast.makeText(activity,"INICIO", Toast.LENGTH_SHORT).show()
+
     }
 
     override fun onDestroy() {
