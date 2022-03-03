@@ -9,15 +9,45 @@
         android:id="@+id/nav_inicio"
         android:name="com.example.navigationdrawermanual.InicioFragment"
         android:label="fragment_inicio"
-        tools:layout="@layout/fragment_inicio" />
+        tools:layout="@layout/fragment_inicio" >
+        <action
+            android:id="@+id/action_nav_inicio_self"
+            app:destination="@id/nav_inicio" />
+        <action
+            android:id="@+id/action_nav_inicio_to_nav_contactos"
+            app:destination="@id/nav_contactos" />
+        <action
+            android:id="@+id/action_nav_inicio_to_nav_ajustes"
+            app:destination="@id/nav_ajustes" />
+    </fragment>
     <fragment
         android:id="@+id/nav_contactos"
         android:name="com.example.navigationdrawermanual.ContactosFragment"
         android:label="fragment_contactos"
-        tools:layout="@layout/fragment_contactos" />
+        tools:layout="@layout/fragment_contactos" >
+        <action
+            android:id="@+id/action_nav_contactos_self"
+            app:destination="@id/nav_contactos" />
+        <action
+            android:id="@+id/action_nav_contactos_to_nav_inicio"
+            app:destination="@id/nav_inicio" />
+        <action
+            android:id="@+id/action_nav_contactos_to_nav_ajustes"
+            app:destination="@id/nav_ajustes" />
+    </fragment>
     <fragment
         android:id="@+id/nav_ajustes"
         android:name="com.example.navigationdrawermanual.AjustesFragment"
         android:label="fragment_ajustes"
-        tools:layout="@layout/fragment_ajustes" />
+        tools:layout="@layout/fragment_ajustes" >
+        <action
+            android:id="@+id/action_nav_ajustes_self"
+            app:destination="@id/nav_ajustes" />
+        <action
+            android:id="@+id/action_nav_ajustes_to_nav_inicio"
+            app:destination="@id/nav_inicio" />
+        <action
+            android:id="@+id/action_nav_ajustes_to_nav_contactos"
+            app:destination="@id/nav_contactos" />
+    </fragment>
 </navigation>
